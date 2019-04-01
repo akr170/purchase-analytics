@@ -1,9 +1,6 @@
 # Purchase-Analytics
 
-
-## Problem
-
-Instacart has published a [dataset](https://www.instacart.com/datasets/grocery-shopping-2017) containing 3 million Instacart orders.  Most calculations on such large datasets can be easily accomplished using Pandas and Numpy in Python.  Python libraries such as Numpy and Pandas are scalable and thus enable user to analyze large datasets with ease.  In this example, I am going to tackle a sample problem of calculating, for each department, the number of times a product was requested, number of times a product was requested for the first time and a ratio of those two numbers.
+Handling large datasets such as the one published by Instacart, ([link to dataset](https://www.instacart.com/datasets/grocery-shopping-2017)) that contains 3 million Instacart orders, and performing fast calculations on those can be challenging.  Most calculations, however, on such large datasets can be easily accomplished using Pandas and Numpy in Python.  Python libraries such as Numpy and Pandas are scalable and thus enable user to analyze large datasets with ease.  In this example, I am going to tackle a sample problem of calculating, for each department, the number of times a product was requested, number of times a product was requested for the first time and a ratio of those two numbers.
 
 
 ## Input Datasets
@@ -75,7 +72,7 @@ department_id,number_of_orders,number_of_first_orders,percentage
 16,2,0,0.00
 ```
 
-*The output file should adhere to the following rules*
+*Let's assume that the output file should adhere to the following rules*
 
 - It is listed in ascending order by `department_id`
 - A `department_id` should be listed only if `number_of_orders` is greater than `0`
