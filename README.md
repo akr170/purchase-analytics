@@ -1,2 +1,2 @@
-# purchase-analytics
+# Purchase-Analytics
 Purchase analytics
