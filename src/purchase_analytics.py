@@ -3,9 +3,9 @@ import numpy as np
 import sys
 
 # obtaining the file names passed through the command line 
-pdts = sys.argv[2]
-ordr = sys.argv[1]
-outf = sys.argv[3]
+pdts = sys.argv[2] #path to input file products.csv that relates products to their departments
+ordr = sys.argv[1] #path to input file order_products.csv that contain order information
+outf = sys.argv[3] #path to the output file report.csv
 
 
 # reading the csv file '../input/products.csv' that contains the information about
