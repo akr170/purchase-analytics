@@ -61,13 +61,11 @@ temp_report.department_id = temp_report.department_id.astype(int)
 # based on 'department_id'
 report = report.merge(temp_report, on='department_id', how='left')
 
-# Lastly, rounding off the percentage column to 2 decimal places
-# and making sure 'number_of_orders' and 'number_of_first_orders' columns are in int format
-report.percentage = report.percentage.round(2)
+# Lastly, making sure 'number_of_orders' and 'number_of_first_orders' columns are in int format
 report.number_of_first_orders = report.number_of_first_orders.astype(np.int64)
 report.number_of_orders = report.number_of_orders.astype(np.int64)
-#pd.options.display.float_format = '{:,.2f}'.format
 
 # The following lines sets the index to department_id and saves the report file in the output directory
+# such that the percentage values are displayed in two decimal places format
 report = report.set_index('department_id')
 report.to_csv(outf, float_format='%.2f')
