@@ -12,10 +12,6 @@ outf = sys.argv[3] #path to the output file report.csv
 # which department a product belongs to into a pandas dataframe named product_info
 product_info = pd.read_csv(pdts)
 
-# The following statement determines how many departments are there
-# We will use this information later to create report file 
-num_of_depts = len(product_info['department_id'].value_counts())
-
 # Extracting only the product id and the department id from the imported product_info
 # We are going to use this info to merge the department_id information into the
 # next dataframe we import which contains the order information
