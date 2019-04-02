@@ -1,6 +1,6 @@
 # Purchase-Analytics
 
-Handling large datasets such as the one published by Instacart, ([link to dataset](https://www.instacart.com/datasets/grocery-shopping-2017)) that contains 3 million Instacart orders, and performing fast calculations on those can be challenging.  Most calculations, however, on such large datasets can be easily accomplished using Pandas and Numpy in Python.  Python libraries such as Numpy and Pandas are scalable and thus enable user to analyze large datasets with ease.  In this example, I am going to tackle a sample problem of calculating, for each department, the number of times a product was requested, number of times a product was requested for the first time and a ratio of those two numbers.
+Handling large datasets such as the one published by Instacart ([link to dataset](https://www.instacart.com/datasets/grocery-shopping-2017)) that contains 3 million Instacart orders, and performing fast calculations on those can be challenging.  Most calculations, however, on such large datasets can be easily accomplished using Pandas and Numpy in Python.  Python libraries such as Numpy and Pandas are scalable and thus enable user to analyze large datasets with ease.  In this example, I am going to tackle a sample problem of calculating, for each department, the number of times a product was requested, number of times a product was requested for the first time and a ratio of those two numbers.
 
 
 ## Input Datasets
